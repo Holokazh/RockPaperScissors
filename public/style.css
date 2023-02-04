@@ -38,7 +38,26 @@ body {
 #container-main {
     width: 100%;
     height: 68vh;
-    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-main #game-board {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-main #game-result {
+    width: 100%;
+    height: 20%;
+    font-size: 1.2em;
+    padding: 20px;
+    text-align: center;
 }
 
 #container-footer {
@@ -79,7 +98,8 @@ body {
 #container-footer #container-cards div div {
     width: 100px;
     height: 100px;
-    background-color: #f6f6f6;
+    background-color: none;
+    border: 1px solid #f6f6f6;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -90,13 +110,8 @@ body {
 
 #container-footer #container-cards div div:hover {
     transition: all .3s ease;
-    transform: scale(102%, 102%);
+    transform: scale(103%, 103%);
     border: 1px solid rgb(114, 203, 255);
-}
-
-#container-footer #container-cards div div:hover svg {
-    height: 52.5px;
-    transition: all .3s ease;
 }
 
 #container-footer #container-cards div div svg {
@@ -105,7 +120,7 @@ body {
     transform: rotate(45deg);
 }
 
-#container-footer #container-cards #scissors div svg {
+#container-footer #container-cards #scissors-div div svg {
     transform: rotate(-45deg);
 }
 
